@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import marked from 'marked';
 import ReactMarkDown from 'react-markdown';
 import './App.css';
 
@@ -7,7 +6,7 @@ class App extends Component {
   constructor(props) {
     super();
     this.state = {
-      markdown: '# sup',
+      markdown: '*Type your text*',
     };
   }
 

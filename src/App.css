@@ -1,20 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@400;700&display=swap');
 * {
   box-sizing: border-box;
 }
 .app {
   display: flex;
   padding: 20px;
-  background: #cccccc;
+  background: #eee;
   height: 100vh;
 }
 
 .markdown-editor {
   width: 50%;
   height: 100%;
+  border: 0;
+  outline: 0;
+  margin-right: 10px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .markdown-preview {
+  padding: 10px 15px;
   width: 50%;
   height: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-family: 'Roboto Slab', serif;
 }
