@@ -1,4 +1,5 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
+import marked from 'marked';
 import './App.css';
 
 class App extends Component {
@@ -21,7 +22,10 @@ class App extends Component {
           value={this.state.markdown}
           className='markdown-editor'
         />
-        <div className='markdown-preview'>{this.state.markdown}</div>
+        <div
+          className='markdown-preview'
+          dangerouslySetInnerHTML={{ __html: marked(this.state.markdown) }}
+        ></div>
       </div>
     );
   }
